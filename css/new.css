@@ -1,0 +1,85 @@
+@font-face {
+  font-family:'Iconos';
+  src: url('../woff/Flaticon.woff') format('woff');
+  font-weight: normal; font-style: normal;
+}
+
+.carrito:before
+{
+	font-family:'Iconos';
+	content:"\f24a";
+  font-size: 10em;
+	color:black;
+	background-color:steelblue;
+}
+
+.select:before
+{
+	font-family:'Iconos';
+	content:"\f142";
+  font-size: 2em;
+	color:black;
+	background-color:steelblue;
+}
+
+.noSelect:before
+{
+	font-family:'Iconos';
+	content:"\f14c";
+  font-size: 2em;
+	color:black;
+	background-colorsteelblue;
+}
+.delete:before
+{
+	font-family:'Iconos';
+	content:"\f22e";
+  font-size: 2em;
+	color:black;
+	background-color:steelblue;
+}
+
+.order:before
+{
+	font-family:'Iconos';
+	content:"\f262";
+  font-size: 2em;
+	color:black;
+	background-color:steelblue;
+}
+
+button{
+  padding:0;
+  margin:0;
+  border-style:none;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+button:active{
+  border:none;
+}
+
+body
+{
+
+background-color:steelblue;
+
+}
+
+#shoppingList , #botones , form 
+{
+	width:50%;
+	margin-left:25%;
+}
+
+#carrito 
+{
+	margin-left:60%;
+}
+
+h1
+{
+	position:relative;
+	left:30%;
+
+}
