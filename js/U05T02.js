@@ -61,6 +61,7 @@ function createForm() {
 	myForm.setAttribute("id", "myForm");
 	
 	var label1 = document.createElement("label");
+	label1.setAttribute("value","Cantidad");
 	label1.setAttribute("for","amount");
 	myForm.appendChild(label1);
 	
@@ -69,6 +70,7 @@ function createForm() {
 	myForm.appendChild(numField);
 
 	var label2 = document.createElement("label");
+	label2.setAttribute("value","Unidad");
 	label2.setAttribute("for","unidad");
 	myForm.appendChild(label2);
 	
@@ -84,6 +86,7 @@ function createForm() {
 
 	var label3 = document.createElement("label");
 	label3.setAttribute("for","product");
+	label3.setAttribute("value","Producto");
 	myForm.appendChild(label3);
 	
 	var textBox = createInput("text", "product", "");
