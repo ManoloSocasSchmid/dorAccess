@@ -9,6 +9,9 @@ function functionLoad() {
 	createForm();
 	createList();
 	getLocal();
+	document.getElementById("labelFirst").innerHTML ="Cantidad";
+	document.getElementById("labelSecond").innerHTML ="Unidad";
+	document.getElementById("labelThird").innerHTML ="Producto";
 }
 
 function createInterface() {
@@ -66,7 +69,6 @@ function createForm() {
 	label1.setAttribute("id","labelFirst");
 	myForm.appendChild(label1);
 	
-	document.getElementById("labelFirst").innerHTML ="Cantidad";
 	
 	var numField = createInput("number", "amount", "");
 	numField.setAttribute("min", 0);
@@ -78,7 +80,6 @@ function createForm() {
 	label2.setAttribute("id","labelSecond");
 	myForm.appendChild(label2);
 	
-	document.getElementById("labelSecond").innerHTML ="Unidad";
 	
 	var ddl = document.createElement("select");
 	ddl.setAttribute("id", "unidad")
@@ -95,8 +96,6 @@ function createForm() {
 	label3.setAttribute("value","Producto");
 	label3.setAttribute("id","labelThird");
 	myForm.appendChild(label3);
-	
-	document.getElementById("labelThird").innerHTML ="Producto";
 	
 	var textBox = createInput("text", "product", "");
 	textBox.setAttribute("placeholder", "Producto");
