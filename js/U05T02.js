@@ -57,13 +57,21 @@ function createInterface() {
 }
 
 function createForm() {
-	var myForm = document.createElement("form");
+	var myForm = document.createElement("div");
 	myForm.setAttribute("id", "myForm");
-
+	
+	var label1 = document.createElement("label");
+	label1.setAttribute("for","amount");
+	myForm.appendChild(label1);
+	
 	var numField = createInput("number", "amount", "");
 	numField.setAttribute("min", 0);
 	myForm.appendChild(numField);
 
+	var label2 = document.createElement("label");
+	label2.setAttribute("for","unidad");
+	myForm.appendChild(label2);
+	
 	var ddl = document.createElement("select");
 	ddl.setAttribute("id", "unidad")
 	ddl.appendChild(createDDLOpcion("Kg"));
@@ -74,6 +82,10 @@ function createForm() {
 	ddl.appendChild(createDDLOpcion("Bottles"));
 	myForm.appendChild(ddl);
 
+	var label3 = document.createElement("label");
+	label3.setAttribute("for","product");
+	myForm.appendChild(label3);
+	
 	var textBox = createInput("text", "product", "");
 	textBox.setAttribute("placeholder", "Producto");
 	myForm.appendChild(textBox);
@@ -85,22 +97,22 @@ function createForm() {
 	var textoColor = document.createTextNode(" Elige un color:");
 	myForm.appendChild(textoColor);
 
-	var colores = createInput("button", "colorChoise", "");
+	var colores = createInput("button", "colorChoise1", "");
 	colores.style.backgroundColor="#002345"
 	colores.setAttribute("onclick","changeColor('#002345')")
 	myForm.appendChild(colores);
 	
-	var colores1 = createInput("button", "colorChoise", "");
+	var colores1 = createInput("button", "colorChoise2", "");
 	colores1.style.backgroundColor="green"
 	colores1.setAttribute("onclick","changeColor('green')")
 	myForm.appendChild(colores1);
 	
-	var colores2 = createInput("button", "colorChoise", "");
+	var colores2 = createInput("button", "colorChoise3", "");
 	colores2.style.backgroundColor="red"
 	colores2.setAttribute("onclick","changeColor('red')")
 	myForm.appendChild(colores2);
 	
-	var colores3 = createInput("button", "colorChoise", "");
+	var colores3 = createInput("button", "colorChoise4", "");
 	colores3.style.backgroundColor="#FFF"
 	colores3.setAttribute("onclick","changeColor('#FFF')")
 	myForm.appendChild(colores3);
