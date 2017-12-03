@@ -66,7 +66,7 @@ function createForm() {
 	label1.setAttribute("id","labelFirst");
 	myForm.appendChild(label1);
 	
-	docment.getElementById("labelFirst").innerHTML ="Cantidad";
+	document.getElementById("labelFirst").innerHTML ="Cantidad";
 	
 	var numField = createInput("number", "amount", "");
 	numField.setAttribute("min", 0);
@@ -78,7 +78,7 @@ function createForm() {
 	label2.setAttribute("id","labelSecond");
 	myForm.appendChild(label2);
 	
-	docment.getElementById("labelSecond").innerHTML ="Unidad";
+	document.getElementById("labelSecond").innerHTML ="Unidad";
 	
 	var ddl = document.createElement("select");
 	ddl.setAttribute("id", "unidad")
@@ -96,7 +96,7 @@ function createForm() {
 	label3.setAttribute("id","labelThird");
 	myForm.appendChild(label3);
 	
-	docment.getElementById("labelThird").innerHTML ="Producto";
+	document.getElementById("labelThird").innerHTML ="Producto";
 	
 	var textBox = createInput("text", "product", "");
 	textBox.setAttribute("placeholder", "Producto");
